@@ -1,0 +1,78 @@
+html, body{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font-size:10pt;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#333;
+	background:url(../images/body-repeat.jpg) repeat-x 0 104px;
+}
+
+h1, h2, h3{
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:normal;
+	margin:5px 0 5px 0;
+}
+
+a{
+	color:#039;
+}
+
+img{
+	border:0px;
+}
+
+#container{
+	position:realative;
+}
+
+#header{
+	background:url(../images/header-repeat.jpg) top repeat-x;
+	height:104px;
+}
+
+#logo{
+	background:url(../images/logo.jpg) center top no-repeat;
+	width:341px;
+	height:104px;
+}
+
+#menu{
+	float:left;
+	width:200px;
+	height:626px;
+	color:#fff;
+	background:url(../images/menu.jpg) no-repeat;
+}
+
+#menu ul{
+	margin:15px 0 0 10px;
+	padding:0px;
+}
+
+#menu ul li{
+	list-style:none;
+}
+
+#menu ul li a{
+	text-decoration:none;
+	font-size:12pt;
+	color:#fff;
+}
+
+#conteudo{
+	padding:5px 10px 60px 0;
+	margin:0 0 0 205px;
+	min-height:560px;
+}
+
+#footer{
+	clear:both;
+	position:fixed;
+	bottom:0px;
+	height:53px;
+	width:100%;
+	background:url(../images/footer.jpg) no-repeat #396a8b;
+}

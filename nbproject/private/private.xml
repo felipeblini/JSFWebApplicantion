@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/blini/Documents/NetBeansProjects/JSFWebApplication/src/java/com/crowdmobile/domain/Cliente.java</file>
+            <file>file:/C:/Users/blini/Documents/NetBeansProjects/JSFWebApplication/src/java/com/crowdmobile/dao/IGenericDAO.java</file>
+            <file>file:/C:/Users/blini/Documents/NetBeansProjects/JSFWebApplication/src/java/com/crowdmobile/mbean/ClienteMBean.java</file>
+            <file>file:/C:/Users/blini/Documents/NetBeansProjects/JSFWebApplication/web/Template.xhtml</file>
+            <file>file:/C:/Users/blini/Documents/NetBeansProjects/JSFWebApplication/src/java/com/crowdmobile/config/BeanFactory.java</file>
+            <file>file:/C:/Users/blini/Documents/NetBeansProjects/JSFWebApplication/src/java/com/crowdmobile/config/spring.xml</file>
+            <file>file:/C:/Users/blini/Documents/NetBeansProjects/JSFWebApplication/src/java/com/crowdmobile/domain/Candidato.java</file>
+            <file>file:/C:/Users/blini/Documents/NetBeansProjects/JSFWebApplication/src/java/com/crowdmobile/dao/imp/GenericDAO.java</file>
+            <file>file:/C:/Users/blini/Documents/NetBeansProjects/JSFWebApplication/src/java/com/crowdmobile/mbean/CalculadoraMBean.java</file>
+            <file>file:/C:/Users/blini/Documents/NetBeansProjects/JSFWebApplication/web/index.xhtml</file>
+            <file>file:/C:/Users/blini/Documents/NetBeansProjects/JSFWebApplication/src/java/com/crowdmobile/bo/CandidatoBO.java</file>
+            <file>file:/C:/Users/blini/Documents/NetBeansProjects/JSFWebApplication/src/java/com/crowdmobile/dao/imp/CandidatoDAO.java</file>
+        </group>
+    </open-files>
+</project-private>

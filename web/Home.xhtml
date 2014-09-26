@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+ 
+    <body>
+ 
+        <ui:composition template="./Template.xhtml">
+ 
+            <ui:define name="content">
+ 
+                <h:form>
+                    
+                    
+                    
+                    <p:dataTable value="#{HomeMbean.listaCandidato}" var="lista">
+ 
+                        <p:column style="width:100px; text-align: center" headerText="Código">
+                            <h:outputText value="#{lista.codigo}" />
+                        </p:column>
+ 
+                        <p:column headerText="Nome">
+                            <h:outputText value="#{lista.nome}" />
+                        </p:column>
+ 
+                        <p:column style="width:100px; text-align: center" headerText="Votos">
+                            <h:outputText value="#{lista.listaVotos.size()}" />
+                        </p:column>
+ 
+                        <p:column style="width:100px; text-align: center" headerText="Editar">
+                            <h:commandLink value="Editar" action="cadastro.xhtml">
+                                <f:setPropertyActionListener 
+                                    target="#{cadastroMbean.candidato}" 
+                                    value="#{lista}" />
+                            </h:commandLink>
+                        </p:column>
+ 
+                    </p:dataTable>
+ 
+                </h:form>
+ 
+            </ui:define>
+ 
+        </ui:composition>
+ 
+    </body>
+</html>

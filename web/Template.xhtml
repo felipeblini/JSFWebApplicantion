@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Pesquisas Eleitorais</title>
+        <link href="resources/css/principal.css" rel="stylesheet" type="text/css" />
+    </h:head>
+
+    <h:body>
+
+        <div id="container">
+
+            <div id="header">
+                    <div id="logo"></div><!-- end logo -->
+            </div><!-- end header -->
+
+            <div id="menu">
+                <h:form>
+                    <ul>
+                        <li>
+                            <h:commandLink action="Home">
+                                <h:outputText value="Página principal"/>
+                            </h:commandLink>
+                        </li>
+                        <li>
+                            <h:commandLink action="votacao">
+                                <h:outputText value="Votação"/>
+                            </h:commandLink>
+                        </li>
+                        <li>
+                            <h:commandLink action="cadastro">
+                                <h:outputText value="Cadastro"/>
+                            </h:commandLink>
+                        </li>
+                    </ul>
+                </h:form>
+            </div><!-- end menu -->
+
+            <div id="conteudo">
+                <ui:insert name="content">
+                    <h1>Página principal</h1>
+                    <p>Aqui é o espaço destinado ao conteúdo do seu projeto.</p>
+                </ui:insert>
+            </div><!-- end conteudo -->
+
+            <div id="footer"></div><!-- end footer -->
+
+        </div><!-- end container -->
+
+    </h:body>
+
+</html>

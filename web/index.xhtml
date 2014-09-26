@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Cadastro Cliente</title>
+    </h:head>
+    <h:body>
+
+        <h:form>
+
+            <h:panelGrid columns="2">
+
+                <h:outputText value="Código:" />
+                <h:inputText value="#{clienteMBean.cliente.codigo}" />
+
+                <h:outputText value="Nome:" />
+                <h:inputText value="#{clienteMBean.cliente.nome}" />
+
+                <h:outputText value="E-mail:" />
+                <h:inputText value="#{clienteMBean.cliente.email}" />
+
+                <h:outputText value="Telefône:" />
+                <h:inputText value="#{clienteMBean.cliente.telefone}" />
+
+                <h:commandButton value="Salvar" action="#{clienteMBean.salvar}" />
+
+            </h:panelGrid>
+
+            <br/>
+
+            <h:dataTable border="1" var="cliente"
+                value="#{clienteMBean.lista}">
+
+                <h:column>
+                    <f:facet name="header">Código</f:facet>
+                    <h:outputText value="#{cliente.codigo}" />
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Nome</f:facet>
+                    <h:outputText value="#{cliente.nome}" />
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">E-mail</f:facet>
+                    <h:outputText value="#{cliente.email}" />
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Editar</f:facet>
+                    <h:commandLink value="Editar">
+                        <f:setPropertyActionListener 
+                            target="#{clienteMBean.cliente}" value="#{cliente}" />
+                    </h:commandLink>
+                </h:column>
+
+                <h:column>
+                    <f:facet name="header">Remover</f:facet>
+                    <h:commandLink value="Remover" action="#{clienteMBean.remover()}">
+                        <f:setPropertyActionListener 
+                            target="#{clienteMBean.cliente}" value="#{cliente}" />
+                    </h:commandLink>
+                </h:column>
+
+            </h:dataTable>
+
+        </h:form>
+
+    </h:body>
+</html>
